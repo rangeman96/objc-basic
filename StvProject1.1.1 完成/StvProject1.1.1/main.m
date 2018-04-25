@@ -12,20 +12,20 @@
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         
-        BOOL mybool1 = YES;
-        NSLog(@"%d", mybool1); //output = 1
+        BOOL myBool1 = YES;
+        NSLog(@"%d", myBool1); //output = 1
         
-        BOOL mybool2 = NO;
-        NSLog(@"%d", mybool2); //output = 0
+        BOOL myBool2 = NO;
+        NSLog(@"%d", myBool2); //output = 0
         
-        NSString *myname = @"Daichi Takemoto";
-        NSLog(@"%@", myname); //output = Daichi Takemoto
+        NSString *myName = @"Daichi Takemoto";
+        NSLog(@"%@", myName); //output = Daichi Takemoto
         
-        NSInteger Number = 1996;
-        NSLog(@"%ld", (long)Number);//output = 1996
+        NSInteger birth = 1996;
+        NSLog(@"%ld", (long)birth);//output = 1996
         
-        NSNumber *myage = @22;
-        NSLog(@"%@", myage); //output age = 22
+        NSNumber *myAge = @22;
+        NSLog(@"%@", myAge); //output age = 22
         
     }
     return 0;
