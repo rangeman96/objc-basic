@@ -12,32 +12,16 @@
 int main(int argc, char * argv[]) {
     @autoreleasepool {
        
-        NSArray *nameNwa = @[@"Easy-E", @"Dr.dre",@"IceCube"];//Array
-            NSLog(@"%@",nameNwa);//output
+        NSArray *nameNwa = @[@"Easy-E", @"Dr.dre", @"IceCube"]; //Array
+        //NSLog(@"%@", nameNwa); //output
+        NSLog(@"%@", nameNwa[1]); //指定した値だけをoutput
         
-        NSArray *nameCar = @[@"Porsche", @"Audi",@"BMW"];//Array
-        for(NSString *strCName in nameCar){//高速列挙
-            NSLog(@"%@",strCName);//output
-        }
-        int idx = 1;
-        NSString *strDisp = nameCar[idx];//指定した配列にアクセスする
-        NSLog(@"%i番目は%@です。",idx,strDisp);//output
+        NSDictionary *germanCar = @{@"911" : @"Porsche", //Dictionary
+                                    @"RS6" : @"Audi",
+                                    @"G63" : @"Mercedes",
+                                    @"M4" : @"BMW"};
         
-        NSInteger cnt = [nameNwa count];//要素数の取得
-        NSNumber *intCnt = [NSNumber numberWithInteger:cnt];//NSNumberに変換
-        NSLog(@"N.W.Aの主要メンバーは%@人です",intCnt);//output
-        
-        NSDictionary *germanCar = @{@"911" : @"Porsche",//Dictionary
-                                @"RS6" : @"Audi",
-                                @"G63" : @"Mercedes",
-                                @"M4" : @"BMW"};
-        
-        strDisp = [germanCar objectForKey:@"G63"];
-        NSLog(@"%@",strDisp);//output
-        
-        for(NSString *key in germanCar){//高速列挙
-            NSLog(@"%@ : %@",key,germanCar[key]);//output
-        }
+        NSLog(@"%@", germanCar[@"RS6"]); //output
     }
      return 0;
 }
