@@ -14,26 +14,26 @@ int main(int argc, char * argv[]) {
         
         //if文
         NSInteger n = 1;
-        if(n == 0){
+        if (n == 0) {
             NSLog(@"なし");
         }
-        if(n == 1){
+        if (n == 1) {
             NSLog(@"あり");
         }
         
         //if~else文
-        NSInteger w = 10;
-        if(w >= 0 && w <= 24){
+        NSInteger w = 26;
+        if (w >= 0 && w <= 24) {
             NSLog(@"晴れ");
         }else{
             NSLog(@"雨");
         }
         
        //if〜else if文
-        NSInteger s = 0;
-        if(s >= 70 && s <= 100){
+        NSInteger s = 50;
+        if (s >= 70 && s <= 100) {
             NSLog(@"Aクラス");
-        }else if(s >= 40 && s <= 69){
+        }else if (s >= 40 && s <= 69) {
             NSLog(@"Bクラス");
         }else{
             NSLog(@"Cクラス");
@@ -44,13 +44,13 @@ int main(int argc, char * argv[]) {
         money > 5000 ? NSLog(@"Expensive") : (@"Cheap");
         
         //for文
-        for(int i=0; i<10; i++){
+        for (int i=0; i<10; i++) {
            NSLog(@"ピザ");
         }
         
         //高速列挙構文
         NSArray *nameCar = @[@"Porsche", @"Audi", @"BMW"];
-        for(NSString *strCName in nameCar){
+        for (NSString *strCName in nameCar) {
            NSLog(@"%@", strCName);
         }
         
@@ -58,15 +58,15 @@ int main(int argc, char * argv[]) {
         NSInteger rollCall = 1;
         switch (rollCall) {
             case 1:
-                NSLog(@"Attend");//出席
+                NSLog(@"Attend"); //出席
                 break;
             case 2:
-                NSLog(@"Default");//欠席
+                NSLog(@"Default"); //欠席
                 break;
             default:
-                NSLog(@"Late");//遅刻
+                NSLog(@"Late"); //遅刻
                 break;
         }
     return 0;
-}
+    }
 }
