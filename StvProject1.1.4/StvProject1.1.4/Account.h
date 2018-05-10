@@ -16,12 +16,12 @@
 @property  (nonatomic) NSString *words; //得意言語プロパティ定義
 
 - (id) initWithName:(NSString *)name age:(NSInteger)age
-                sex:(NSString *)sex words:(NSString *)words;//指定イニシャライザ
+                sex:(NSString *)sex words:(NSString *)words; //指定イニシャライザ
 
-//メソッドを宣言
-- (void) dasu;
+- (void) printAccount; //メソッドを宣言
 
 //インスタンス生成 = initWithName = [[Account alloc] init];
 //インスタンスをArrayで配列に入れる
 //if文で条件分岐し出力する。
+
 @end

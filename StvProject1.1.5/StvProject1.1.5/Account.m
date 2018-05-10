@@ -7,6 +7,11 @@
 //
 
 #import "Account.h"
+#import "FavoriteProgrammingLanguage.h"
+
+@interface Account () <FavoriteProgrammingLanguageDelegate> //プロトコルに準拠
+
+@end
 
 @implementation Account
 
@@ -22,9 +27,14 @@
 
 - (void)printAccount {
     
-    //NSString *sex = man;
-    // _ == self
+    //インスタンス化( クラス名 *インスタンス名 ＝ [クラス名　new]; )
+    FavoriteProgrammingLanguage *favoriteProgrammingLanguage = [FavoriteProgrammingLanguage new];
     
+        //インターンを呼ぶ処理( インスタンス名 呼ぶメソッド名 )
+        [favoriteProgrammingLanguage joinIntern];
+
+    
+    //([self.sex isEqual: @"man"]) = ([_sex isEqual: @"man"])
     if ([self.sex isEqual: @"man"]) {
         NSLog(@"%@君は、%@が得意な%ld歳です。", self.name, self.words, self.age);
     } else {
