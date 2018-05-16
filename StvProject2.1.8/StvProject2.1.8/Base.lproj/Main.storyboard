@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" tag="50" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ci7-ya-tFA">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="X1V-k2-BsR"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NSQ-rj-Nvi"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="血液型を入力してください。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X4-Ij-OXL">
+                                <rect key="frame" x="68" y="223" width="239" height="22"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zc2-dR-29v">
+                                <rect key="frame" x="0.0" y="407" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="done" id="YnW-fZ-U5O">
+                                        <connections>
+                                            <action selector="pickerViewAndToolBar:" destination="BYZ-38-t0r" id="3py-xc-QFb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Ci7-ya-tFA" firstAttribute="leading" secondItem="Zc2-dR-29v" secondAttribute="leading" id="0Ms-9R-UfC"/>
+                            <constraint firstAttribute="trailing" secondItem="Ci7-ya-tFA" secondAttribute="trailing" id="FsF-c3-wVa"/>
+                            <constraint firstItem="5X4-Ij-OXL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iy5-SZ-a0D"/>
+                            <constraint firstItem="Ci7-ya-tFA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TJL-RI-jI6"/>
+                            <constraint firstItem="Ci7-ya-tFA" firstAttribute="trailing" secondItem="Zc2-dR-29v" secondAttribute="trailing" id="dko-36-nhw"/>
+                            <constraint firstItem="Ci7-ya-tFA" firstAttribute="top" secondItem="Zc2-dR-29v" secondAttribute="bottom" id="mwl-Mu-HQE"/>
+                            <constraint firstItem="Ci7-ya-tFA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="p5X-ar-tzH"/>
+                            <constraint firstItem="5X4-Ij-OXL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="uJf-iU-MIi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Lwf-8l-kuV" appends="YES" id="hkd-TN-YfZ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="bloodTypePicker" destination="Ci7-ya-tFA" id="q35-24-8bD"/>
+                        <outlet property="resultLabel" destination="5X4-Ij-OXL" id="0Xn-Dx-zoF"/>
+                        <outlet property="toolBar" destination="Zc2-dR-29v" id="5Xl-CO-Ieb"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="BJb-tj-wbV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Lwf-8l-kuV"/>
+            </objects>
+            <point key="canvasLocation" x="-788" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
