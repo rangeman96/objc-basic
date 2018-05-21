@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--A画面-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="文字を入力してください。" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p5S-fe-E7V">
+                                <rect key="frame" x="71" y="237" width="232" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下のTextFieldに入力した文字が次の画面で表示されます。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7V-V2-S6Z">
+                                <rect key="frame" x="71" y="99" width="232" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="35J-Wa-s6g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCW-ig-JHa">
+                                <rect key="frame" x="100" y="456" width="175" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="9ie-Ip-RAb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Send to Next"/>
+                                <connections>
+                                    <action selector="sendButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NYd-85-cXW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="p5S-fe-E7V" firstAttribute="top" secondItem="i7V-V2-S6Z" secondAttribute="bottom" constant="58" id="0lC-48-BgY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZCW-ig-JHa" secondAttribute="bottom" constant="98" id="1Vu-VX-TgM"/>
+                            <constraint firstItem="p5S-fe-E7V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="E2X-vG-26k"/>
+                            <constraint firstItem="p5S-fe-E7V" firstAttribute="top" secondItem="i7V-V2-S6Z" secondAttribute="bottom" constant="58" id="FaY-aD-3u1"/>
+                            <constraint firstItem="p5S-fe-E7V" firstAttribute="trailing" secondItem="i7V-V2-S6Z" secondAttribute="trailing" id="Il1-E1-RW5"/>
+                            <constraint firstItem="ZCW-ig-JHa" firstAttribute="centerX" secondItem="p5S-fe-E7V" secondAttribute="centerX" id="La6-h6-P7W"/>
+                            <constraint firstItem="i7V-V2-S6Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MXC-FL-gGR"/>
+                            <constraint firstItem="p5S-fe-E7V" firstAttribute="leading" secondItem="i7V-V2-S6Z" secondAttribute="leading" id="Sdx-NU-ZZY"/>
+                            <constraint firstItem="i7V-V2-S6Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="eUg-h4-YNi"/>
+                            <constraint firstItem="ZCW-ig-JHa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="nae-FC-eFg"/>
+                            <constraint firstItem="ZCW-ig-JHa" firstAttribute="top" secondItem="p5S-fe-E7V" secondAttribute="bottom" constant="189" id="vqR-Y1-qgx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="CHw-Bd-olA" appends="YES" id="h5z-gl-DoC"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="A画面" id="htu-Vc-ahi">
+                        <barButtonItem key="rightBarButtonItem" title="Forward" id="W2K-d6-04s"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myTextField" destination="p5S-fe-E7V" id="tn3-bJ-zJM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="CHw-Bd-olA">
+                    <connections>
+                        <action selector="closeKeyBoard:" destination="BYZ-38-t0r" id="fpI-iZ-myQ"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="m3q-2V-EQ0"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1105" y="-645"/>
+        </scene>
+    </scenes>
+</document>
