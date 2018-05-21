@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Root</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>CAR1</string>
+			<key>subTitle</key>
+			<string>AMG SL63</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>CAR2</string>
+			<key>subTitle</key>
+			<string>RangeRoverSport</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>CAR3</string>
+			<key>subTitle</key>
+			<string>TeslaModelS</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>CAR4</string>
+			<key>subTitle</key>
+			<string>BMW i8</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>CAR5</string>
+			<key>subTitle</key>
+			<string>Porsche911 turboS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
