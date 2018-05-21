@@ -21,7 +21,8 @@
     self.webView.delegate = self;
     
     // URLを指定
-    NSURL *url = [NSURL URLWithString:@"http://www.apple.com/iphone/"];
+    //NSURL *url = [NSURL URLWithString:@"http://www.apple.com/iphone/"];
+    NSURL *url = [NSURL URLWithString:@"http://www.asahi.com"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     // リクエストを投げる
@@ -57,11 +58,12 @@
 }
     // エラーの場合、エラーコードに応じてアラートを表示する
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-    
+    NSLog(@"エラー");
+    [self createAleartController];
     // オフラインによるエラー場合のみアラートを出す
-    if (error.code == NSURLErrorNotConnectedToInternet) {
+    /*if (error.code == NSURLErrorNotConnectedToInternet) {
         [self presentViewController:self.tabBarController animated:YES completion:nil];
-    }
+    }*/
     
 }
 
