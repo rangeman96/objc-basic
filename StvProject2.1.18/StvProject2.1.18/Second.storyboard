@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sfy-v7-a7r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--B画面-->
+        <scene sceneID="CKl-yi-cGs">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="Sfy-v7-a7r" userLabel="B画面" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NR6-ky-HOM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B画面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPE-3C-R7a">
+                                <rect key="frame" x="148" y="84" width="79.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="0.66783497431506844" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mPE-3C-R7a" firstAttribute="top" secondItem="7Ri-jK-pHv" secondAttribute="top" constant="64" id="NwN-Rx-QF8"/>
+                            <constraint firstItem="mPE-3C-R7a" firstAttribute="centerX" secondItem="NR6-ky-HOM" secondAttribute="centerX" id="vdk-xz-CfO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Ri-jK-pHv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gtN-N4-g06" userLabel="B画面"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lCa-yc-Uj5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="-546"/>
+        </scene>
+    </scenes>
+</document>
