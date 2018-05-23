@@ -13,8 +13,8 @@
 
 //プロパティ宣言
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property NSArray *imageList1;
-@property NSArray *imageList2;
+@property NSArray *imgScenery;
+@property NSArray *imgCar;
 @property NSArray *sectionList;
 
 @end
@@ -26,13 +26,26 @@ static CGFloat const CellHeight = 30;
 
 
 @implementation ViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     //Arrayに画像を入れる
-    self.imageList1 = @[@"1.png", @"2.png", @"3.png", @"4.png", @"5.png"];
-    self.imageList2 = @[@"car0.png", @"car1.png", @"car2.png", @"car3.png", @"car4.png", @"car5.png"];
+    self.imgScenery = @[@"1.png",
+                        @"2.png",
+                        @"3.png",
+                        @"4.png",
+                        @"5.png"];
+    
+    self.imgCar = @[@"car0.png",
+                    @"car1.png",
+                    @"car2.png",
+                    @"car3.png",
+                    @"car4.png",
+                    @"car5.png"];
+    
     self.sectionList = @[@"絶景", @"車"];
+    
     //デリゲート//データソース
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -43,10 +56,10 @@ static CGFloat const CellHeight = 30;
     //セクション
     switch (section) {
         case 0:
-            return self.imageList1.count;
+            return self.imgScenery.count;
             break;
         case 1:
-            return self.imageList2.count;
+            return self.imgCar.count;
             break;
         default:
             return 0;
@@ -70,13 +83,13 @@ static CGFloat const CellHeight = 30;
     //セクション分け条件分岐
     if (indexPath.section == 0) {
         NSArray *items = dic[@"Root1"];
-        cell.imageView.image = [UIImage imageNamed:self.imageList1[indexPath.row]];
+        cell.imageView.image = [UIImage imageNamed:self.imgScenery[indexPath.row]];
         cell.titleLabel.text = items[indexPath.row][@"title"];
         cell.subTitleLabel.text = items[indexPath.row][@"subTitle"];
         
     } else if (indexPath.section == 1) {
         NSArray *items = dic[@"Root2"];
-        cell.imageView.image = [UIImage imageNamed:self.imageList2[indexPath.row]];
+        cell.imageView.image = [UIImage imageNamed:self.imgCar[indexPath.row]];
         cell.titleLabel.text = items[indexPath.row][@"title"];
         cell.subTitleLabel.text = items[indexPath.row][@"subTitle"];
     }
