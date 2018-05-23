@@ -15,9 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 @property (strong, nonatomic) NSDateFormatter *dateData;
 
-//メソッド定義
-- (void)settingDate;
-
 @end
 
 @implementation ViewController
