@@ -29,7 +29,8 @@
 // リターンキーでテキストを送信する
 // 同時にキーボードを閉じる
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [self sendButton:nil]; return [textField resignFirstResponder];
+    [self sendButton:nil];
+    return [textField resignFirstResponder];
 }
 
 // TextField以外をタップでキーボードを閉じる
@@ -39,7 +40,8 @@
 
 - (IBAction)sendButton:(id)sender {
     //Second.storyboardの読み込み
-    UIStoryboard *secondStoryboard = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
+    UIStoryboard *secondStoryboard = [UIStoryboard storyboardWithName:@"Second"
+                                                               bundle:nil];
     
     // 遷移先クラスをインスタンス化して呼び出す
     SecondViewController *secondViewController = [secondStoryboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
@@ -54,7 +56,7 @@
     // TextField内のテキストを、受け渡し用の変数にセットする
     secondViewController.receiveString = self.myTextField.text;
     // 画面遷移を行うメソッド
-    [self presentViewController: secondViewController animated:YES completion: nil];
+    [self presentViewController:secondViewController animated:YES completion: nil];
     
 }
 @end
