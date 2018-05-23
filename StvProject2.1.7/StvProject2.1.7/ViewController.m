@@ -1,143 +1,85 @@
 //
 //  ViewController.m
-//  test2.1.7
-//
-//  Created by 竹本大地 on 2018/05/15.
-//  Copyright © 2018年 Daichi Take. All rights reserved.
-//
-
-//
-//  ViewController.m
 //  StvProject2.1.7
 //
-//  Created by 竹本大地 on 2018/05/15.
-//  Copyright © 2018年 Daichi Take. All rights reserved.
+//  Created by 竹本大地 on 2018/05/23.
+//  Copyright © 2018年 Daichi.T96. All rights reserved.
 //
 
 #import "ViewController.h"
 
 @interface ViewController ()
-// プロパティを定義
-@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+@property (weak, nonatomic) IBOutlet UITextField *editTextField;
+
+@property (strong, nonatomic) UITapGestureRecognizer *singleTap;
 
 @end
 
-// 最大入力文字数の定数を用意
-//static int const maxTextLength = 30;
-
 @implementation ViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.editTextField.returnKeyType = UIReturnKeyDone;
+    self.editTextField.delegate = self;
+    
+    // 背景タップ時の処理
+    self.singleTap = [[UITapGestureRecognizer alloc]
+                      initWithTarget:self action:@selector(onSingleTap:)];
+    self.singleTap.delegate = self;
+    self.singleTap.numberOfTapsRequired = 1;
+    [self.view addGestureRecognizer:self.singleTap];
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
+// 背景タップ時にキーボードを消す
+- (void)onSingleTap:(UITapGestureRecognizer *)recognizer {
+    [self.editTextField resignFirstResponder];
+}
 
-
-
-
-
-    // キーボードが表示：消す
-    /* if (self.textField.isFirstResponder) {
-     [self.textField resignFirstResponder];
-     }*/
-
-/*- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    // テキストフィールドが空欄かどうかチェック
-    if (textField.text.length == 0) {
-        textField.enablesReturnKeyAutomatically = YES;
+// キーボードが表示されていない時は無効化
+- (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    if (gestureRecognizer == self.singleTap) {
+        //キーボード表示時のみ有効
+        if (self.editTextField.isFirstResponder) {
+            return YES;
+        } else {
+            return NO;
+        }
     }
     return YES;
 }
- 
-// テキストの文字数をチェックしているメソッド
-// 空欄の場合はリターンキーを非活性にする
-- (BOOL)_mytextField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+
+// 最大入力文字数の設定
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    // 最大文字数設定
+    int maxInputLength = 30;
+    // 入力済みテキスト取得
+    NSMutableString *str = [textField.text mutableCopy];
+    // 入力済みテキストと入力が行われたテキストの結合
+    [str replaceCharactersInRange:range withString:string];
     
-    // 空欄チェック
-    if (textField.text.length == 0) {
-        textField.enablesReturnKeyAutomatically = YES;
-    }
-    // 入力済みのテキストを初期値として取得
-    NSMutableString *inputedText = [textField.text mutableCopy];
-    // 入力済みのテキストと入力が行われたテキストを結合
-    [inputedText replaceCharactersInRange:range withString:string];
-    
-    // 入力中のテキストが30を超えたらそれ以上の入力を無効にする
-    if (inputedText.length > maxTextLength) {
-        NSLog(@"%d文字以上は入力できません。", maxTextLength);
+    if ([str length] > maxInputLength) {
+        // 最大文字数を超えた時の通知
+        UIAlertController *overStrAlert =[UIAlertController
+                                          alertControllerWithTitle:@"文字数オーバー"
+                                          message:@"最大文字数は30文字です。"
+                                          preferredStyle:UIAlertControllerStyleAlert];
+        
+        [overStrAlert addAction:[UIAlertAction
+                                 actionWithTitle:@"OK"
+                                 style:UIAlertActionStyleDefault
+                                 handler:nil]];
+        
+        [self presentViewController:overStrAlert animated:YES completion:nil];
+        
         return NO;
     }
     return YES;
-}*/
-
-
-
-
-
-
-
-
-
-
-/*
-UITextField *_textField;
-NSUInteger _maxLength;
-
-NSString *_previousText;
-NSRange _lastReplaceRange;
-NSString *_lastReplacementString;
-
-- (instancetype)init
-{
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_textFieldDidChange:) name:UITextFieldTextDidChangeNotification object:_textField];
-    _maxLength = 30;
 }
-
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
-{
-    _previousText = textField.text;
-    _lastReplaceRange = range;
-    _lastReplacementString = string;
-    
-    return YES;
-}
-
-- (void)_textFieldDidChange:(NSNotification *)notification
-{
-    UITextField *textField = (UITextField *)notification.object;
-    
-    if (textField.markedTextRange) {
-        return;
-    }
-    
-    if ([textField.text length] > _maxLength) {
-        NSInteger offset = _maxLength - [textField.text length];
-        
-        NSString *replacementString = [_lastReplacementString substringToIndex:([_lastReplacementString length] + offset)];
-        NSString *text = [_previousText stringByReplacingCharactersInRange:_lastReplaceRange withString:replacementString];
-        
-        UITextPosition *position = [textField positionFromPosition:textField.selectedTextRange.start offset:offset];
-        UITextRange *selectedTextRange = [textField textRangeFromPosition:position toPosition:position];
-        
-        textField.text = text;
-        textField.selectedTextRange = selectedTextRange;
-    }
-}
-*/
-
-
-
-
-
-// 背景タップでキーボードを非表示
-- (IBAction)tapBackground:(id)sender {
-    [self.view endEditing:YES];
-}
-
 @end
-
