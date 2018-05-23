@@ -7,120 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		866DE95E20AA71AB00ED935F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 866DE95D20AA71AB00ED935F /* AppDelegate.m */; };
-		866DE96120AA71AB00ED935F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866DE96020AA71AB00ED935F /* ViewController.m */; };
-		866DE96420AA71AB00ED935F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866DE96220AA71AB00ED935F /* Main.storyboard */; };
-		866DE96620AA71AD00ED935F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866DE96520AA71AD00ED935F /* Assets.xcassets */; };
-		866DE96920AA71AD00ED935F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866DE96720AA71AD00ED935F /* LaunchScreen.storyboard */; };
-		866DE96C20AA71AD00ED935F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 866DE96B20AA71AD00ED935F /* main.m */; };
-		866DE97420AA7B1700ED935F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866DE97320AA7B1700ED935F /* SystemConfiguration.framework */; };
-		866DE97720AA9F3400ED935F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 866DE97920AA9F3400ED935F /* Localizable.strings */; };
+		8626552720B502D1005A9B46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8626552620B502D1005A9B46 /* AppDelegate.m */; };
+		8626552A20B502D1005A9B46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8626552920B502D1005A9B46 /* ViewController.m */; };
+		8626552D20B502D1005A9B46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8626552B20B502D1005A9B46 /* Main.storyboard */; };
+		8626552F20B502D3005A9B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8626552E20B502D3005A9B46 /* Assets.xcassets */; };
+		8626553220B502D3005A9B46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8626553020B502D3005A9B46 /* LaunchScreen.storyboard */; };
+		8626553520B502D3005A9B46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8626553420B502D3005A9B46 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		866DE95920AA71AA00ED935F /* StvProject2.1.6-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StvProject2.1.6-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		866DE95C20AA71AB00ED935F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		866DE95D20AA71AB00ED935F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		866DE95F20AA71AB00ED935F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		866DE96020AA71AB00ED935F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		866DE96320AA71AB00ED935F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		866DE96520AA71AD00ED935F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		866DE96820AA71AD00ED935F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		866DE96A20AA71AD00ED935F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		866DE96B20AA71AD00ED935F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		866DE97320AA7B1700ED935F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		866DE97820AA9F3400ED935F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8626552220B502D1005A9B46 /* StvProject2.1.6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StvProject2.1.6.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8626552520B502D1005A9B46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8626552620B502D1005A9B46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8626552820B502D1005A9B46 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8626552920B502D1005A9B46 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8626552C20B502D1005A9B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8626552E20B502D3005A9B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8626553120B502D3005A9B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8626553320B502D3005A9B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8626553420B502D3005A9B46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		866DE95620AA71AA00ED935F /* Frameworks */ = {
+		8626551F20B502D1005A9B46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				866DE97420AA7B1700ED935F /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		866DE95020AA71AA00ED935F = {
+		8626551920B502D1005A9B46 = {
 			isa = PBXGroup;
 			children = (
-				866DE95B20AA71AA00ED935F /* StvProject2.1.6 */,
-				866DE95A20AA71AA00ED935F /* Products */,
-				866DE97220AA7B1700ED935F /* Frameworks */,
+				8626552420B502D1005A9B46 /* StvProject2.1.6 */,
+				8626552320B502D1005A9B46 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		866DE95A20AA71AA00ED935F /* Products */ = {
+		8626552320B502D1005A9B46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				866DE95920AA71AA00ED935F /* StvProject2.1.6-2.app */,
+				8626552220B502D1005A9B46 /* StvProject2.1.6.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		866DE95B20AA71AA00ED935F /* StvProject2.1.6 */ = {
+		8626552420B502D1005A9B46 /* StvProject2.1.6 */ = {
 			isa = PBXGroup;
 			children = (
-				866DE95C20AA71AB00ED935F /* AppDelegate.h */,
-				866DE95D20AA71AB00ED935F /* AppDelegate.m */,
-				866DE95F20AA71AB00ED935F /* ViewController.h */,
-				866DE96020AA71AB00ED935F /* ViewController.m */,
-				866DE96220AA71AB00ED935F /* Main.storyboard */,
-				866DE96520AA71AD00ED935F /* Assets.xcassets */,
-				866DE96720AA71AD00ED935F /* LaunchScreen.storyboard */,
-				866DE96A20AA71AD00ED935F /* Info.plist */,
-				866DE96B20AA71AD00ED935F /* main.m */,
-				866DE97920AA9F3400ED935F /* Localizable.strings */,
+				8626552520B502D1005A9B46 /* AppDelegate.h */,
+				8626552620B502D1005A9B46 /* AppDelegate.m */,
+				8626552820B502D1005A9B46 /* ViewController.h */,
+				8626552920B502D1005A9B46 /* ViewController.m */,
+				8626552B20B502D1005A9B46 /* Main.storyboard */,
+				8626552E20B502D3005A9B46 /* Assets.xcassets */,
+				8626553020B502D3005A9B46 /* LaunchScreen.storyboard */,
+				8626553320B502D3005A9B46 /* Info.plist */,
+				8626553420B502D3005A9B46 /* main.m */,
 			);
 			path = StvProject2.1.6;
-			sourceTree = "<group>";
-		};
-		866DE97220AA7B1700ED935F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				866DE97320AA7B1700ED935F /* SystemConfiguration.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		866DE95820AA71AA00ED935F /* StvProject2.1.6-2 */ = {
+		8626552120B502D1005A9B46 /* StvProject2.1.6 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 866DE96F20AA71AD00ED935F /* Build configuration list for PBXNativeTarget "StvProject2.1.6-2" */;
+			buildConfigurationList = 8626553820B502D3005A9B46 /* Build configuration list for PBXNativeTarget "StvProject2.1.6" */;
 			buildPhases = (
-				866DE95520AA71AA00ED935F /* Sources */,
-				866DE95620AA71AA00ED935F /* Frameworks */,
-				866DE95720AA71AA00ED935F /* Resources */,
+				8626551E20B502D1005A9B46 /* Sources */,
+				8626551F20B502D1005A9B46 /* Frameworks */,
+				8626552020B502D1005A9B46 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "StvProject2.1.6-2";
-			productName = "StvProject2.1.6-2";
-			productReference = 866DE95920AA71AA00ED935F /* StvProject2.1.6-2.app */;
+			name = StvProject2.1.6;
+			productName = StvProject2.1.6;
+			productReference = 8626552220B502D1005A9B46 /* StvProject2.1.6.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		866DE95120AA71AA00ED935F /* Project object */ = {
+		8626551A20B502D1005A9B46 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Daichi Take";
+				ORGANIZATIONNAME = Daichi.T96;
 				TargetAttributes = {
-					866DE95820AA71AA00ED935F = {
-						CreatedOnToolsVersion = 9.3;
+					8626552120B502D1005A9B46 = {
+						CreatedOnToolsVersion = 9.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 866DE95420AA71AA00ED935F /* Build configuration list for PBXProject "StvProject2.1.6" */;
+			buildConfigurationList = 8626551D20B502D1005A9B46 /* Build configuration list for PBXProject "StvProject2.1.6" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,72 +113,63 @@
 				en,
 				Base,
 			);
-			mainGroup = 866DE95020AA71AA00ED935F;
-			productRefGroup = 866DE95A20AA71AA00ED935F /* Products */;
+			mainGroup = 8626551920B502D1005A9B46;
+			productRefGroup = 8626552320B502D1005A9B46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				866DE95820AA71AA00ED935F /* StvProject2.1.6-2 */,
+				8626552120B502D1005A9B46 /* StvProject2.1.6 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		866DE95720AA71AA00ED935F /* Resources */ = {
+		8626552020B502D1005A9B46 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				866DE96920AA71AD00ED935F /* LaunchScreen.storyboard in Resources */,
-				866DE97720AA9F3400ED935F /* Localizable.strings in Resources */,
-				866DE96620AA71AD00ED935F /* Assets.xcassets in Resources */,
-				866DE96420AA71AB00ED935F /* Main.storyboard in Resources */,
+				8626553220B502D3005A9B46 /* LaunchScreen.storyboard in Resources */,
+				8626552F20B502D3005A9B46 /* Assets.xcassets in Resources */,
+				8626552D20B502D1005A9B46 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		866DE95520AA71AA00ED935F /* Sources */ = {
+		8626551E20B502D1005A9B46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				866DE96120AA71AB00ED935F /* ViewController.m in Sources */,
-				866DE96C20AA71AD00ED935F /* main.m in Sources */,
-				866DE95E20AA71AB00ED935F /* AppDelegate.m in Sources */,
+				8626552A20B502D1005A9B46 /* ViewController.m in Sources */,
+				8626553520B502D3005A9B46 /* main.m in Sources */,
+				8626552720B502D1005A9B46 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		866DE96220AA71AB00ED935F /* Main.storyboard */ = {
+		8626552B20B502D1005A9B46 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				866DE96320AA71AB00ED935F /* Base */,
+				8626552C20B502D1005A9B46 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		866DE96720AA71AD00ED935F /* LaunchScreen.storyboard */ = {
+		8626553020B502D3005A9B46 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				866DE96820AA71AD00ED935F /* Base */,
+				8626553120B502D3005A9B46 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		866DE97920AA9F3400ED935F /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				866DE97820AA9F3400ED935F /* en */,
-			);
-			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		866DE96D20AA71AD00ED935F /* Debug */ = {
+		8626553620B502D3005A9B46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -251,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		866DE96E20AA71AD00ED935F /* Release */ = {
+		8626553720B502D3005A9B46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -303,35 +279,33 @@
 			};
 			name = Release;
 		};
-		866DE97020AA71AD00ED935F /* Debug */ = {
+		8626553920B502D3005A9B46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5369P4CA3K;
-				INFOPLIST_FILE = "$(SRCROOT)/StvProject2.1.6/Info.plist";
+				INFOPLIST_FILE = StvProject2.1.6/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.daichi.StvProject2-1-6-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daichi.StvProject2-1-6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		866DE97120AA71AD00ED935F /* Release */ = {
+		8626553A20B502D3005A9B46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5369P4CA3K;
-				INFOPLIST_FILE = "$(SRCROOT)/StvProject2.1.6/Info.plist";
+				INFOPLIST_FILE = StvProject2.1.6/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.daichi.StvProject2-1-6-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daichi.StvProject2-1-6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,25 +314,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		866DE95420AA71AA00ED935F /* Build configuration list for PBXProject "StvProject2.1.6" */ = {
+		8626551D20B502D1005A9B46 /* Build configuration list for PBXProject "StvProject2.1.6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				866DE96D20AA71AD00ED935F /* Debug */,
-				866DE96E20AA71AD00ED935F /* Release */,
+				8626553620B502D3005A9B46 /* Debug */,
+				8626553720B502D3005A9B46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		866DE96F20AA71AD00ED935F /* Build configuration list for PBXNativeTarget "StvProject2.1.6-2" */ = {
+		8626553820B502D3005A9B46 /* Build configuration list for PBXNativeTarget "StvProject2.1.6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				866DE97020AA71AD00ED935F /* Debug */,
-				866DE97120AA71AD00ED935F /* Release */,
+				8626553920B502D3005A9B46 /* Debug */,
+				8626553A20B502D3005A9B46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 866DE95120AA71AA00ED935F /* Project object */;
+	rootObject = 8626551A20B502D1005A9B46 /* Project object */;
 }
