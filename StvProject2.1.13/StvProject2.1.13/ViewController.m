@@ -12,8 +12,8 @@
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property NSArray *imageList1;
-@property NSArray *imageList2;
+@property NSArray *imgCar;
+@property NSArray *imgScenery;
 @property NSArray *sectionList;
 
 @end
@@ -24,20 +24,21 @@
     [super viewDidLoad];
     
     //画像を配列(Array)に入れる
-    self.imageList1 = @[@"car1.png",
-                       @"car2.png",
-                       @"car3.png",
-                       @"car4.png",
-                       @"car5.png"];
-    self.imageList2 = @[@"1.png",
+    self.imgCar = @[@"car1.png",
+                    @"car2.png",
+                    @"car3.png",
+                    @"car4.png",
+                    @"car5.png"];
+    
+    self.imgScenery = @[@"1.png",
                         @"2.png",
                         @"3.png",
                         @"4.png",
                         @"5.png"];
-    self.sectionList = @[@"車",
-                         @"絶景"];
     
-    //デレゲート＆データソース接続
+    self.sectionList = @[@"車", @"絶景"];
+    
+//    //デレゲート＆データソース接続
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     
@@ -48,20 +49,20 @@
     //セクション
     switch (section) {
         case 0:
-            return self.imageList1.count;
+            return self.imgCar.count;
             break;
         case 1:
-            return self.imageList2.count;
+            return self.imgScenery.count;
             break;
         default:
             return 0;
             break;
     }
-    //return self.imageList.count;
 }
 
 // セルの中身 (cellForRowAtIndexPath)
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+    cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     // セルを取得 (インスタンス化)
     CustomCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
@@ -71,9 +72,9 @@
     
     //セクション分け条件分岐
     if (indexPath.section == 0) {
-        cell.imageView.image = [UIImage imageNamed:self.imageList1[indexPath.row]];
+        cell.imageView.image = [UIImage imageNamed:self.imgCar[indexPath.row]];
     } else if (indexPath.section == 1) {
-        cell.imageView.image = [UIImage imageNamed:self.imageList2[indexPath.row]];
+        cell.imageView.image = [UIImage imageNamed:self.imgScenery[indexPath.row]];
     }
     
     return cell;
