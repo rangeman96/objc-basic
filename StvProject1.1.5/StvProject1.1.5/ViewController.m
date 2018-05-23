@@ -8,22 +8,56 @@
 
 #import "ViewController.h"
 #import "Account.h"
+#import "FavoriteProgrammingLanguage.h"
 
-@interface ViewController ()
+@interface ViewController ()<FavoriteProgrammingLanguageDelegate>
+
 @end
 
 @implementation ViewController
 
-   - (void)viewDidLoad {
-      [super viewDidLoad];
-       
-        Account *account = [Account new]; //インスタンス化
-        [account printAccount]; //Accountから呼ぶ
-   }
-
-   - (void)didReceiveMemoryWarning {
-      [super didReceiveMemoryWarning];
-   }
-
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
 
 @end
+
+//@implementation ViewController
+//
+//   - (void)viewDidLoad {
+//      [super viewDidLoad];
+//
+//       Account *takeshi = [[Account alloc] initWithName:@"takeshi" age:30 sex:@"man" words:@"Objective-C"];
+//       Account *yumiko = [[Account alloc] initWithName:@"yumiko" age:22 sex:@"woman" words:@"Java"];
+//
+//       NSArray *members = @[takeshi, yumiko];
+//       for (Account *member in members){
+//            [member printAccount]; //AccountからprintAcconutメソッドを呼ぶ
+//       }
+//   }
+//
+//@end
+//
+//
+//#import "ViewController.h"
+//#import "FavoriteProgrammingLanguage.h"
+//#import "Account.h"
+//
+//@interface ViewController ()<FavoriteProgrammingLanguageDelegate>
+//
+//@end
+//
+//@implementation ViewController
+//
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//    // Do any additional setup after loading the view, typically from a nib.
+//}
+//
+//- (void)didReceiveMemoryWarning {
+//    [super didReceiveMemoryWarning];
+//    // Dispose of any resources that can be recreated.
+//}
+//
+//
+//@end

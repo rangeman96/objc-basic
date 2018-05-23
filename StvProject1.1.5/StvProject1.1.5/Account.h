@@ -7,16 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FavoriteProgrammingLanguage.h"
 
-@interface Account : NSObject
+@interface Account : NSObject <FavoriteProgrammingLanguageDelegate>
 
 @property  (nonatomic) NSString *name; //プロパティ定義
 @property  (nonatomic) NSInteger age;
 @property  (nonatomic) NSString *sex;
 @property  (nonatomic) NSString *words;
 
-- (id) initWithName:(NSString *)name age:(NSInteger)age
-                sex:(NSString *)sex words:(NSString *)words; //指定イニシャライザ
+- (id) initWithName:(NSString *)name
+                age:(NSInteger)age
+                sex:(NSString *)sex
+              words:(NSString *)words; //指定イニシャライザ
 
 - (void) printAccount; //メソッドを宣言
 

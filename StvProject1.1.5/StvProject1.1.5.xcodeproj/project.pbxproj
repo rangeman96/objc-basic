@@ -68,15 +68,15 @@
 				86B305E820A18F0900099311 /* AppDelegate.m */,
 				86B305EA20A18F0900099311 /* ViewController.h */,
 				86B305EB20A18F0900099311 /* ViewController.m */,
+				86C9AF7220A2E58B0030C4E7 /* Account.h */,
+				86C9AF7020A2E57E0030C4E7 /* Account.m */,
+				86B305FD20A18F3D00099311 /* FavoriteProgrammingLanguage.h */,
+				86B305FE20A18F3D00099311 /* FavoriteProgrammingLanguage.m */,
 				86B305ED20A18F0900099311 /* Main.storyboard */,
 				86B305F020A18F0A00099311 /* Assets.xcassets */,
 				86B305F220A18F0A00099311 /* LaunchScreen.storyboard */,
 				86B305F520A18F0A00099311 /* Info.plist */,
 				86B305F620A18F0A00099311 /* main.m */,
-				86B305FD20A18F3D00099311 /* FavoriteProgrammingLanguage.h */,
-				86B305FE20A18F3D00099311 /* FavoriteProgrammingLanguage.m */,
-				86C9AF7220A2E58B0030C4E7 /* Account.h */,
-				86C9AF7020A2E57E0030C4E7 /* Account.m */,
 			);
 			path = StvProject1.1.5;
 			sourceTree = "<group>";

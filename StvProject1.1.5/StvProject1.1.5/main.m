@@ -8,9 +8,30 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "FavoriteProgrammingLanguage.h"
+#import "Account.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        // 個人の設定
+        Account *takeshi = [[Account new]
+                        initWithName:@"takeshi"
+                        age:30
+                        sex:@"man"
+                        words:@"Objective-C"];
+        
+        Account *yumiko = [[Account new]
+                        initWithName:@"yumiko"
+                        age:22
+                        sex:@"woman"
+                        words:@"Swift"];
+        
+        
+        NSArray *team = @[takeshi, yumiko];
+        
+        for (Account *person in team){
+            [person printAccount];
+        }
+        return 0;
     }
 }

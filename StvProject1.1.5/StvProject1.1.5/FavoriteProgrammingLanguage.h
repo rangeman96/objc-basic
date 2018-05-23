@@ -9,14 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @protocol FavoriteProgrammingLanguageDelegate <NSObject> //プロトコルを定義
-
 @optional
    - (void)canObjc; //オプショナルを定義
 @end
 
 @interface  FavoriteProgrammingLanguage : NSObject
-
-@property (nonatomic, weak) id<FavoriteProgrammingLanguageDelegate> delegate; //デリゲートインスタンスを定義
+@property (nonatomic, weak)
+id<FavoriteProgrammingLanguageDelegate> delegate; //デリゲートプロパティにFPLDプロトコルを付与する
    - (void)joinIntern; //メソッドを宣言
 
 @end
