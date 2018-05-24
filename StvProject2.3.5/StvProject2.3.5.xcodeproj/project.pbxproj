@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0467870B56F2617D0A97AE94 /* libPods-StvProject2.3.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F8231A8B065BEAD55B0F34 /* libPods-StvProject2.3.5.a */; };
+		866D22CA20B6629200B198CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 866D22C920B6629200B198CC /* AppDelegate.m */; };
+		866D22CD20B6629200B198CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866D22CC20B6629200B198CC /* ViewController.m */; };
+		866D22D020B6629300B198CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866D22CE20B6629300B198CC /* Main.storyboard */; };
+		866D22D220B6629300B198CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866D22D120B6629300B198CC /* Assets.xcassets */; };
+		866D22D520B6629300B198CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866D22D320B6629300B198CC /* LaunchScreen.storyboard */; };
+		866D22D820B6629300B198CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 866D22D720B6629300B198CC /* main.m */; };
+		866D22E020B6648200B198CC /* TodoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 866D22DF20B6648200B198CC /* TodoList.m */; };
+		866D22E320B664B000B198CC /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866D22E220B664B000B198CC /* RegisterViewController.m */; };
+		866D22E620B664E000B198CC /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 866D22E520B664E000B198CC /* CustomTableViewCell.m */; };
+		866D22E820B6653200B198CC /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866D22E720B6653200B198CC /* Register.storyboard */; };
+		866D22EA20B67B1B00B198CC /* libsqlite3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 866D22E920B67B1B00B198CC /* libsqlite3.a */; };
+		866D22EC20B67B2400B198CC /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 866D22EB20B67B2400B198CC /* libFMDB.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33844F6660081F28147A7750 /* Pods-StvProject2.3.5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StvProject2.3.5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StvProject2.3.5/Pods-StvProject2.3.5.debug.xcconfig"; sourceTree = "<group>"; };
+		61AEEF48C37DD18C80FF08EE /* Pods-StvProject2.3.5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StvProject2.3.5.release.xcconfig"; path = "Pods/Target Support Files/Pods-StvProject2.3.5/Pods-StvProject2.3.5.release.xcconfig"; sourceTree = "<group>"; };
+		866D22C520B6629200B198CC /* StvProject2.3.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StvProject2.3.5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		866D22C820B6629200B198CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		866D22C920B6629200B198CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		866D22CB20B6629200B198CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		866D22CC20B6629200B198CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		866D22CF20B6629300B198CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		866D22D120B6629300B198CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		866D22D420B6629300B198CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		866D22D620B6629300B198CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		866D22D720B6629300B198CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		866D22DE20B6648200B198CC /* TodoList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoList.h; sourceTree = "<group>"; };
+		866D22DF20B6648200B198CC /* TodoList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoList.m; sourceTree = "<group>"; };
+		866D22E120B664B000B198CC /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		866D22E220B664B000B198CC /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		866D22E420B664E000B198CC /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		866D22E520B664E000B198CC /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		866D22E720B6653200B198CC /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		866D22E920B67B1B00B198CC /* libsqlite3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libsqlite3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		866D22EB20B67B2400B198CC /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2F8231A8B065BEAD55B0F34 /* libPods-StvProject2.3.5.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StvProject2.3.5.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		866D22C220B6629200B198CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866D22EC20B67B2400B198CC /* libFMDB.a in Frameworks */,
+				866D22EA20B67B1B00B198CC /* libsqlite3.a in Frameworks */,
+				0467870B56F2617D0A97AE94 /* libPods-StvProject2.3.5.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		866D22BC20B6629200B198CC = {
+			isa = PBXGroup;
+			children = (
+				866D22C720B6629200B198CC /* StvProject2.3.5 */,
+				866D22C620B6629200B198CC /* Products */,
+				F04B194CB8F0C6B1370DE40B /* Pods */,
+				B2A646F9D1FAF0E47FB9A866 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		866D22C620B6629200B198CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				866D22C520B6629200B198CC /* StvProject2.3.5.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		866D22C720B6629200B198CC /* StvProject2.3.5 */ = {
+			isa = PBXGroup;
+			children = (
+				866D22C820B6629200B198CC /* AppDelegate.h */,
+				866D22C920B6629200B198CC /* AppDelegate.m */,
+				866D22CB20B6629200B198CC /* ViewController.h */,
+				866D22CC20B6629200B198CC /* ViewController.m */,
+				866D22E420B664E000B198CC /* CustomTableViewCell.h */,
+				866D22E520B664E000B198CC /* CustomTableViewCell.m */,
+				866D22CE20B6629300B198CC /* Main.storyboard */,
+				866D22DE20B6648200B198CC /* TodoList.h */,
+				866D22DF20B6648200B198CC /* TodoList.m */,
+				866D22E120B664B000B198CC /* RegisterViewController.h */,
+				866D22E220B664B000B198CC /* RegisterViewController.m */,
+				866D22E720B6653200B198CC /* Register.storyboard */,
+				866D22D120B6629300B198CC /* Assets.xcassets */,
+				866D22D320B6629300B198CC /* LaunchScreen.storyboard */,
+				866D22D620B6629300B198CC /* Info.plist */,
+				866D22D720B6629300B198CC /* main.m */,
+			);
+			path = StvProject2.3.5;
+			sourceTree = "<group>";
+		};
+		B2A646F9D1FAF0E47FB9A866 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				866D22EB20B67B2400B198CC /* libFMDB.a */,
+				866D22E920B67B1B00B198CC /* libsqlite3.a */,
+				C2F8231A8B065BEAD55B0F34 /* libPods-StvProject2.3.5.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F04B194CB8F0C6B1370DE40B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33844F6660081F28147A7750 /* Pods-StvProject2.3.5.debug.xcconfig */,
+				61AEEF48C37DD18C80FF08EE /* Pods-StvProject2.3.5.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		866D22C420B6629200B198CC /* StvProject2.3.5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 866D22DB20B6629300B198CC /* Build configuration list for PBXNativeTarget "StvProject2.3.5" */;
+			buildPhases = (
+				0CE9803E8944CF335C350046 /* [CP] Check Pods Manifest.lock */,
+				866D22C120B6629200B198CC /* Sources */,
+				866D22C220B6629200B198CC /* Frameworks */,
+				866D22C320B6629200B198CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StvProject2.3.5;
+			productName = StvProject2.3.5;
+			productReference = 866D22C520B6629200B198CC /* StvProject2.3.5.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		866D22BD20B6629200B198CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Daichi.T96;
+				TargetAttributes = {
+					866D22C420B6629200B198CC = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 866D22C020B6629200B198CC /* Build configuration list for PBXProject "StvProject2.3.5" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 866D22BC20B6629200B198CC;
+			productRefGroup = 866D22C620B6629200B198CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				866D22C420B6629200B198CC /* StvProject2.3.5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		866D22C320B6629200B198CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866D22D520B6629300B198CC /* LaunchScreen.storyboard in Resources */,
+				866D22D220B6629300B198CC /* Assets.xcassets in Resources */,
+				866D22D020B6629300B198CC /* Main.storyboard in Resources */,
+				866D22E820B6653200B198CC /* Register.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CE9803E8944CF335C350046 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StvProject2.3.5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		866D22C120B6629200B198CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866D22E320B664B000B198CC /* RegisterViewController.m in Sources */,
+				866D22CD20B6629200B198CC /* ViewController.m in Sources */,
+				866D22E620B664E000B198CC /* CustomTableViewCell.m in Sources */,
+				866D22D820B6629300B198CC /* main.m in Sources */,
+				866D22CA20B6629200B198CC /* AppDelegate.m in Sources */,
+				866D22E020B6648200B198CC /* TodoList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		866D22CE20B6629300B198CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				866D22CF20B6629300B198CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		866D22D320B6629300B198CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				866D22D420B6629300B198CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		866D22D920B6629300B198CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		866D22DA20B6629300B198CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		866D22DC20B6629300B198CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33844F6660081F28147A7750 /* Pods-StvProject2.3.5.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StvProject2.3.5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daichi.StvProject2-3-5";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		866D22DD20B6629300B198CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61AEEF48C37DD18C80FF08EE /* Pods-StvProject2.3.5.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StvProject2.3.5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daichi.StvProject2-3-5";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		866D22C020B6629200B198CC /* Build configuration list for PBXProject "StvProject2.3.5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				866D22D920B6629300B198CC /* Debug */,
+				866D22DA20B6629300B198CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		866D22DB20B6629300B198CC /* Build configuration list for PBXNativeTarget "StvProject2.3.5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				866D22DC20B6629300B198CC /* Debug */,
+				866D22DD20B6629300B198CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 866D22BD20B6629200B198CC /* Project object */;
+}
