@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--B画面-->
+        <scene sceneID="oQJ-6G-McD">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" title="Second" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N56-gt-zzR" userLabel="B画面" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G0H-QF-lqf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="結果" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOv-aK-PVc">
+                                <rect key="frame" x="116" y="92" width="143" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONU-0F-v8k" userLabel="Result Label">
+                                <rect key="frame" x="59" y="174" width="256" height="72"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="H5H-x3-gZY"/>
+                                    <constraint firstAttribute="width" constant="256" id="ahP-hZ-P41"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27T-e2-Tob">
+                                <rect key="frame" x="110" y="518" width="154" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Back to the A"/>
+                                <connections>
+                                    <action selector="backButtom:" destination="N56-gt-zzR" eventType="touchUpInside" id="AgG-ja-GrP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="27T-e2-Tob" firstAttribute="leading" secondItem="xgM-os-cJk" secondAttribute="leading" constant="110" id="1MD-w5-0Gb"/>
+                            <constraint firstItem="fOv-aK-PVc" firstAttribute="centerX" secondItem="G0H-QF-lqf" secondAttribute="centerX" id="7Bb-6b-0vn"/>
+                            <constraint firstItem="fOv-aK-PVc" firstAttribute="leading" secondItem="xgM-os-cJk" secondAttribute="leading" constant="116" id="7WC-Pe-FXW"/>
+                            <constraint firstItem="xgM-os-cJk" firstAttribute="bottom" secondItem="27T-e2-Tob" secondAttribute="bottom" constant="107" id="80b-V1-Wky"/>
+                            <constraint firstItem="ONU-0F-v8k" firstAttribute="leading" secondItem="xgM-os-cJk" secondAttribute="leading" constant="59" id="DxP-3W-4dQ"/>
+                            <constraint firstItem="ONU-0F-v8k" firstAttribute="top" secondItem="fOv-aK-PVc" secondAttribute="bottom" constant="46" id="EMF-bf-3jc"/>
+                            <constraint firstItem="xgM-os-cJk" firstAttribute="trailing" secondItem="fOv-aK-PVc" secondAttribute="trailing" constant="116" id="H08-6V-ehl"/>
+                            <constraint firstItem="xgM-os-cJk" firstAttribute="trailing" secondItem="ONU-0F-v8k" secondAttribute="trailing" constant="60" id="HU1-x6-BZG"/>
+                            <constraint firstItem="fOv-aK-PVc" firstAttribute="leading" secondItem="xgM-os-cJk" secondAttribute="leading" constant="116" id="IrL-R9-bqG"/>
+                            <constraint firstItem="xgM-os-cJk" firstAttribute="bottom" secondItem="27T-e2-Tob" secondAttribute="bottom" constant="107" id="K1c-om-yJX"/>
+                            <constraint firstItem="ONU-0F-v8k" firstAttribute="top" secondItem="fOv-aK-PVc" secondAttribute="bottom" constant="46" id="KoQ-Bv-xoz"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ONU-0F-v8k" secondAttribute="bottom" constant="421" id="SEu-V4-pJ3"/>
+                            <constraint firstItem="27T-e2-Tob" firstAttribute="top" secondItem="ONU-0F-v8k" secondAttribute="bottom" constant="272" id="cwo-s4-zCm"/>
+                            <constraint firstItem="ONU-0F-v8k" firstAttribute="centerX" secondItem="G0H-QF-lqf" secondAttribute="centerX" id="fNN-BO-yqy"/>
+                            <constraint firstItem="ONU-0F-v8k" firstAttribute="leading" secondItem="xgM-os-cJk" secondAttribute="leading" constant="59" id="gbR-LW-Fzd"/>
+                            <constraint firstItem="xgM-os-cJk" firstAttribute="trailing" secondItem="fOv-aK-PVc" secondAttribute="trailing" constant="116" id="lzx-T3-ke4"/>
+                            <constraint firstItem="fOv-aK-PVc" firstAttribute="top" secondItem="xgM-os-cJk" secondAttribute="top" constant="72" id="mjh-qg-49o"/>
+                            <constraint firstItem="fOv-aK-PVc" firstAttribute="centerX" secondItem="G0H-QF-lqf" secondAttribute="centerX" id="ngW-uJ-Td4"/>
+                            <constraint firstItem="ONU-0F-v8k" firstAttribute="centerX" secondItem="27T-e2-Tob" secondAttribute="centerX" id="rtz-tT-Q6w"/>
+                            <constraint firstItem="27T-e2-Tob" firstAttribute="centerX" secondItem="G0H-QF-lqf" secondAttribute="centerX" id="sLI-Wv-InQ"/>
+                            <constraint firstItem="xgM-os-cJk" firstAttribute="trailing" secondItem="27T-e2-Tob" secondAttribute="trailing" constant="111" id="whd-Iv-RE6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xgM-os-cJk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="A画面" id="VLz-4S-JKv" userLabel="B画面">
+                        <barButtonItem key="rightBarButtonItem" title="Forward" id="J62-5j-5hC"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="catchResultLabel" destination="ONU-0F-v8k" id="QkF-ll-0f6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBW-7X-5cC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.80000000000001" y="16.641679160419791"/>
+        </scene>
+    </scenes>
+</document>
