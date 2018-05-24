@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Root2</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>車0</string>
+			<key>subTitle</key>
+			<string>RollsRoyce Dawn</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>車１</string>
+			<key>subTitle</key>
+			<string>AMG SL63</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>車２</string>
+			<key>subTitle</key>
+			<string>RangeRover Vogue</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>車３</string>
+			<key>subTitle</key>
+			<string>Tesla Models</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>車４</string>
+			<key>subTitle</key>
+			<string>BMW i8</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>車５</string>
+			<key>subTitle</key>
+			<string>Porsche 911 TurboS</string>
+		</dict>
+	</array>
+	<key>Root1</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>絶景１</string>
+			<key>subTitle</key>
+			<string>夕焼けの綺麗な丘の写真です。</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>絶景２</string>
+			<key>subTitle</key>
+			<string>透き通った水色の海の写真です。</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>絶景３</string>
+			<key>subTitle</key>
+			<string>太陽の日差しの美しい峡谷の写真です。</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>絶景４</string>
+			<key>subTitle</key>
+			<string>霧のたちこめる湖の写真です。</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>絶景５</string>
+			<key>subTitle</key>
+			<string>鏡の様な水面が美しい写真です。</string>
+		</dict>
+	</array>
+</dict>
+</plist>
