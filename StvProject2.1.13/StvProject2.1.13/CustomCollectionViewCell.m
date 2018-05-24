@@ -1,0 +1,13 @@
+//
+//  CustomCollectionViewCell.m
+//  StvProject2.1.12
+//
+//  Created by 竹本大地 on 2018/05/20.
+//  Copyright © 2018年 Daichi Take. All rights reserved.
+//
+
+#import "CustomCollectionViewCell.h"
+
+@implementation CustomCollectionViewCell
+
+@end
