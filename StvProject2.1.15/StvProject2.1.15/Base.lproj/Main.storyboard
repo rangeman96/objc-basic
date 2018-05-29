@@ -37,9 +37,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="User" image="user" id="Uni-Bl-xhL">
-                        <inset key="imageInsets" minX="9" minY="0.0" maxX="9" maxY="0.0"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" tag="1" title="User" image="user2" landscapeImage="user2" largeContentSizeImage="user2" selectedImage="user2" id="Uni-Bl-xhL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,6 +50,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="TWv-bc-QWq"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hu2-pc-iNB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -92,16 +91,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="egP-Lo-AgZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="TimeLine" image="timeLine" id="CXW-nP-EfW">
-                        <inset key="imageInsets" minX="9" minY="0.0" maxX="9" maxY="0.0"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" tag="2" title="TimeLine" image="timeline2" landscapeImage="timeline2" largeContentSizeImage="timeline2" selectedImage="timeline2" id="CXW-nP-EfW"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mkw-8u-Pfc" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="838" y="430"/>
         </scene>
-        <!--compatible-->
+        <!--Fate-->
         <scene sceneID="cJc-53-Zdk">
             <objects>
                 <viewController id="ite-k0-3oZ" customClass="ViewController" sceneMemberID="viewController">
@@ -128,9 +125,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z0U-o8-mii"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="3" title="compatible" image="compatible" id="tq9-Sx-65Q">
-                        <inset key="imageInsets" minX="9" minY="0.0" maxX="9" maxY="0.0"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" tag="3" title="Fate" image="electricity" landscapeImage="electricity" largeContentSizeImage="electricity" selectedImage="electricity" id="tq9-Sx-65Q"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NLD-KY-JXR" sceneMemberID="firstResponder"/>
@@ -139,8 +134,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="compatible" width="64" height="64"/>
-        <image name="timeLine" width="64" height="64"/>
-        <image name="user" width="64" height="64"/>
+        <image name="electricity" width="32" height="32"/>
+        <image name="timeline2" width="32" height="32"/>
+        <image name="user2" width="32" height="32"/>
     </resources>
 </document>
