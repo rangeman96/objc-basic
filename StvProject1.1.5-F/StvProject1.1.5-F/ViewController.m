@@ -25,24 +25,25 @@
     
     Account *takeshi = [[Account alloc]initWithName:@"Takeshi" age:30 sex:@"M" language:@"Objective-C"];
     Account *yumiko = [[Account alloc]initWithName:@"Yumiko" age:22 sex:@"F" language:@"Swift"];
-    
+    //ViewController *viewCon = [ViewController new];
     NSArray *accountArray = @[takeshi, yumiko];
-    
+
     // インスタンス
     FavoriteProgrammingLanguage *favoriteProgrammingLanguage = [FavoriteProgrammingLanguage new];
     favoriteProgrammingLanguage.delegate = self;
     
     for (Account *account in accountArray) {
-        
         [account printAccount];
         
-//        if ([account.language isEqual: @"Objective-C"]) {
-//            [favoriteProgrammingLanguage doObjC];
-//        } else {
-//            NSLog(@"%@さんはインターンに参加できない", account.name);
-//        }
-
+        if ([account.language isEqual: @"Objective-C"]) {
+            [favoriteProgrammingLanguage doObjC:account.name];
+        } else {
+            NSLog(@"%@はインターンに参加できない", account.name);
+        }
     }
+}
+-(void)join: (NSString *)name{
+    NSLog(@"%@は、インターシップ参加出来る",name);
 }
 
 @end

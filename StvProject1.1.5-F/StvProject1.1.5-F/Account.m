@@ -7,7 +7,7 @@
 //
 
 #import "Account.h"
-
+#import "FavoriteProgrammingLanguage.h"
 @implementation Account
 
 - (id)initWithName:(NSString *)name
@@ -20,12 +20,12 @@
         self.age = age;
         self.sex = sex;
         self.language = language;
-        
     }
     return self;
 }
 
 - (void)printAccount {
+    
     if ([self.sex isEqual: @"M"]) {
         NSLog(@"%@ Kovacsは、%@が得意な%ld歳です。", self.name, self.language, self.age);
     } else {

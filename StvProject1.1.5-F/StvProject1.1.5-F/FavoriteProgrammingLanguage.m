@@ -10,12 +10,12 @@
 
 @implementation FavoriteProgrammingLanguage
 
-- (void)doObjC {
+- (void)doObjC: (NSString *)name{
     
     //delegateメソッドが@optionalなので、respondsToSelector で delegateオブジェクト が delegateメソッド を実装しているか判定する
-    if ([self.delegate respondsToSelector:@selector(join)]) {
+    if ([self.delegate respondsToSelector:@selector(join:)]) {
         NSLog(@"Obj-Cができる");
-        [self.delegate join];
+        [self.delegate join:name];
     }
 }
 

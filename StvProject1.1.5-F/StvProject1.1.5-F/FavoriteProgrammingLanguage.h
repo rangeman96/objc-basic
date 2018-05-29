@@ -13,7 +13,7 @@
 @optional
 // @optional以下のメソッドはdelegate準拠先での実装は必須ではなくなる。
 // catchDelegate
-- (void)join;
+- (void)join:(NSString *)name;
 
 @end
 
@@ -22,6 +22,6 @@
 // デリゲートオブジェクト
 @property (weak, nonatomic) id <FavoriteProgrammingLanguageDelegate> delegate;
 // throwDelegate
-- (void)doObjC;
+- (void)doObjC:(NSString *)name;
 
 @end
