@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4DW-f7-Zjq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1Vm-oj-PMh">
+            <objects>
+                <viewController id="4DW-f7-Zjq" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dob-zo-yWm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="vrh-jc-oVX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tLc-iI-TEm">
+                                <rect key="frame" x="16" y="44" width="343" height="279"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="279" id="k3z-Q6-GlE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIV-Sm-iCl">
+                                <rect key="frame" x="229" y="520" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="F9Q-K1-KMs"/>
+                                </constraints>
+                                <state key="normal" image="library">
+                                    <color key="titleColor" red="0.1917809016" green="0.73332560570000005" blue="0.71830535490000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="albumButton:" destination="4DW-f7-Zjq" eventType="touchUpInside" id="7Nc-A2-PQR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20W-Xy-EcU">
+                                <rect key="frame" x="64" y="520" width="90" height="90"/>
+                                <state key="normal" image="camera">
+                                    <color key="titleColor" red="1" green="0.81999086080000005" blue="0.25763285489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cameraButton:" destination="4DW-f7-Zjq" eventType="touchUpInside" id="jhS-gV-bwH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzE-DE-lOT">
+                                <rect key="frame" x="64" y="425" width="255" height="54"/>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                <state key="normal" title="Filter  OFF">
+                                    <color key="titleColor" red="0.63880695679999999" green="0.0" blue="0.73261024750000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToTheOriginal:" destination="4DW-f7-Zjq" eventType="touchUpInside" id="T0Y-gb-8W2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gu3-OS-LNW">
+                                <rect key="frame" x="64" y="363" width="255" height="54"/>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                <state key="normal" title="Filter  ON">
+                                    <color key="titleColor" red="1" green="0.81999086080000005" blue="0.25763285489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="photoShop:" destination="4DW-f7-Zjq" eventType="touchUpInside" id="fpt-nP-xn1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QIV-Sm-iCl" firstAttribute="leading" secondItem="20W-Xy-EcU" secondAttribute="trailing" constant="75" id="ApM-IN-fcG"/>
+                            <constraint firstItem="gu3-OS-LNW" firstAttribute="leading" secondItem="P0k-Va-uqE" secondAttribute="leading" constant="64" id="C8F-Id-gl7"/>
+                            <constraint firstItem="QIV-Sm-iCl" firstAttribute="bottom" secondItem="20W-Xy-EcU" secondAttribute="bottom" id="OCg-Fb-0I3"/>
+                            <constraint firstItem="20W-Xy-EcU" firstAttribute="top" secondItem="tLc-iI-TEm" secondAttribute="bottom" constant="197" id="OnS-wc-2zX"/>
+                            <constraint firstItem="tLc-iI-TEm" firstAttribute="top" secondItem="P0k-Va-uqE" secondAttribute="top" constant="24" id="PwZ-Qc-I0b"/>
+                            <constraint firstItem="P0k-Va-uqE" firstAttribute="trailing" secondItem="tzE-DE-lOT" secondAttribute="trailing" constant="56" id="RBj-FU-Pzz"/>
+                            <constraint firstItem="P0k-Va-uqE" firstAttribute="trailing" secondItem="QIV-Sm-iCl" secondAttribute="trailing" constant="56" id="Tck-XU-KgD"/>
+                            <constraint firstItem="P0k-Va-uqE" firstAttribute="trailing" secondItem="tLc-iI-TEm" secondAttribute="trailing" constant="16" id="VJ6-Md-J1d"/>
+                            <constraint firstItem="P0k-Va-uqE" firstAttribute="bottom" secondItem="20W-Xy-EcU" secondAttribute="bottom" constant="57" id="WIG-te-7MG"/>
+                            <constraint firstItem="tLc-iI-TEm" firstAttribute="leading" secondItem="P0k-Va-uqE" secondAttribute="leading" constant="16" id="WX0-d2-ot2"/>
+                            <constraint firstItem="tLc-iI-TEm" firstAttribute="leading" secondItem="P0k-Va-uqE" secondAttribute="leading" constant="16" id="Ya0-qp-8ZW"/>
+                            <constraint firstItem="gu3-OS-LNW" firstAttribute="top" secondItem="tLc-iI-TEm" secondAttribute="bottom" constant="40" id="cb4-XA-exb"/>
+                            <constraint firstItem="20W-Xy-EcU" firstAttribute="leading" secondItem="P0k-Va-uqE" secondAttribute="leading" constant="64" id="eGV-5E-Dic"/>
+                            <constraint firstItem="tLc-iI-TEm" firstAttribute="centerX" secondItem="dob-zo-yWm" secondAttribute="centerX" constant="0.5" id="fKn-gA-uBg"/>
+                            <constraint firstItem="tzE-DE-lOT" firstAttribute="top" secondItem="gu3-OS-LNW" secondAttribute="bottom" constant="8" id="jna-1B-JE9"/>
+                            <constraint firstItem="tzE-DE-lOT" firstAttribute="leading" secondItem="P0k-Va-uqE" secondAttribute="leading" constant="64" id="kJA-X1-Lv1"/>
+                            <constraint firstItem="P0k-Va-uqE" firstAttribute="trailing" secondItem="gu3-OS-LNW" secondAttribute="trailing" constant="56" id="t3q-64-oEo"/>
+                            <constraint firstItem="QIV-Sm-iCl" firstAttribute="top" secondItem="20W-Xy-EcU" secondAttribute="top" id="xog-Qv-46v"/>
+                            <constraint firstItem="tLc-iI-TEm" firstAttribute="top" secondItem="P0k-Va-uqE" secondAttribute="top" constant="24" id="yIY-dZ-FCI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="P0k-Va-uqE"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="tLc-iI-TEm" id="kOZ-Kf-too"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RxQ-0E-0VD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="1435" height="1920"/>
+        <image name="camera" width="128" height="128"/>
+        <image name="library" width="128" height="128"/>
+    </resources>
+</document>
