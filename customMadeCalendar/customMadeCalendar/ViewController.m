@@ -167,11 +167,11 @@
         if(j == 0) {
             calendarBaseLabel.textColor = [UIColor colorWithRed:0.831 green:0.349 blue:0.224 alpha:1.0];
             
-            //土曜日のとき
+        //土曜日のとき
         } else if(j == 6) {
             calendarBaseLabel.textColor = [UIColor colorWithRed:0.400 green:0.471 blue:0.980 alpha:1.0];
             
-            //平日
+        //平日
         } else {
             calendarBaseLabel.textColor = [UIColor lightGrayColor];
         }
